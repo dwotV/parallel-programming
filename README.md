@@ -7,7 +7,7 @@ Una guía para programación en paralelo, utilizando mpich y nfs en el entorno d
 
 Para este caso se utilizó la distribución openSUSE Leap en su versión 15.5.
 
-[openSUSE Leap 15.5] (https://get.opensuse.org/leap/15.5/)
+[openSUSE Leap 15.5](https://get.opensuse.org/leap/15.5/)
 
 ### Intalar mpich
 
@@ -91,9 +91,9 @@ ip-máquina-cliente
 ```
 /usr/lib64/mpi/gcc/mpich/bin/mpiexec -f /home/usuario/carpeta/hosts -n 2 /home/usuario/carpeta/tu_programa
 ```
--f /home/usuario/carpeta/hosts especifica el archivo hosts.
+* -f /home/usuario/carpeta/hosts especifica el archivo hosts.
 
--n 2 indica que se ejecutarán 2 procesos en total, uno en cada máquina.
+* -n 2 indica que se ejecutarán 2 procesos en total, uno en cada máquina.
 
 ##### Nota sobre Control de Procesos
 
@@ -102,5 +102,5 @@ Si necesitas especificar más de un proceso por máquina, puedes controlar esto 
 mpiexec -f /home/usuario/carpeta/hosts -n 3 --map-by ppr:2:node /home/usuario/carpeta/tu_programa
 ```
 
--n 3: Especifica que se ejecutarán 3 procesos en total.
---map-by ppr:2:node: Especifica que cada nodo recibirá 2 procesos, y el tercero se asignará automáticamente al siguiente nodo.
+* -n 3: Especifica que se ejecutarán 3 procesos en total.
+* --map-by ppr:2:node: Especifica que cada nodo recibirá 2 procesos, y el tercero se asignará automáticamente al siguiente nodo.
