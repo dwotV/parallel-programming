@@ -6,6 +6,7 @@ Una guía para programación en paralelo, utilizando mpich y nfs en el entorno d
 ### Descargar openSUSE Leap 15.5
 
 Para este caso se utilizó la distribución openSUSE Leap en su versión 15.5.
+
 [openSUSE Leap 15.5] (https://get.opensuse.org/leap/15.5/)
 
 ### Intalar mpich
