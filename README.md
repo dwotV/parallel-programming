@@ -27,8 +27,7 @@ sudo zypper install nfs-kernel-server
 2. Configurar el directorio a compartir:
 Edita el archivo /etc/exports y coloca directorio que quieres compartir. Por ejemplo: /home/usuario/carpeta.
 ```
-/home/usuario/carpeta
-<ip-máquina-cliente>(rw,sync,no_subtree_check)
+/home/usuario/carpeta <ip-máquina-cliente>(rw,sync,no_subtree_check)
 ```
 
 3. Reiniciar el servidor NFS:
