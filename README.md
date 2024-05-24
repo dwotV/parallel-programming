@@ -37,8 +37,7 @@ sudo systemctl restart nfsserver
 
 4. Permitir el tráfico NFS a través del firewall:
 ```
-sudo firewall-cmd --permanent
---add-service=nfs
+sudo firewall-cmd --permanent --add-service=nfs
 sudo firewall-cmd --reload
 ```
 
