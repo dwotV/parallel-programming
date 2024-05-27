@@ -97,7 +97,7 @@ ip-máquina-cliente
 
 Si necesitas especificar más de un proceso por máquina, puedes controlar esto directamente desde la línea de comandos de mpiexec. Por ejemplo, si quieres ejecutar dos procesos en la máquina sevidora y uno en máquina cliente:
 ```
-mpiexec -f /home/usuario/carpeta/hosts -n 3 --map-by ppr:2:node /home/usuario/carpeta/tu_programa
+/usr/lib64/mpi/gcc/mpich/bin/mpiexec -f /home/usuario/carpeta/hosts -n 3 --map-by ppr:2:node /home/usuario/carpeta/tu_programa
 ```
 
 * -n 3: Especifica que se ejecutarán 3 procesos en total.
