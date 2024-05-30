@@ -54,15 +54,15 @@ sudo mkdir -p /mnt/carpeta
 ```
 Nota: Se debe utilizar el mismo nombre de la carpeta del directorio que compartió la máquina servidora.
 
-3. Montar el directorio compartido:
-```
-sudo mount <ip-máquina-servidora>:/home/usuario/carpeta /mnt/carpeta
-```
-
-4. Agregar entrada al archivo /etc/fstab para montar automáticamente el directorio en el arranque:
+3. Agregar entrada al archivo /etc/fstab para montar automáticamente el directorio en el arranque:
 Ir hasta el directorio /etc, editar el archivo fstab y colocar lo siguiente:
 ```
 <ip-máquina-servidora>:/home/usuario/carpeta /mnt/carpeta nfs defaults 0 0
+```
+
+4. Montar el directorio compartido:
+```
+sudo mount <ip-máquina-servidora>:/home/usuario/carpeta /mnt/carpeta
 ```
 
 ### Ejecutar el Programa con MPI
